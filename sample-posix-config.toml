@@ -1,0 +1,9 @@
+[left_matrix]
+port = "/dev/ttyACM1"
+baudrate = 115200
+sleeping = false
+
+[right_matrix]
+port = "/dev/ttyACM0"
+baudrate = 115200
+sleeping = false

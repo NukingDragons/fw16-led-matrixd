@@ -1,0 +1,12 @@
+[Unit]
+Description=Framework 16 LED Matrix Daemon
+
+[Service]
+Type=forking
+PIDFile=/run/fw16-led-matrixd.pid
+ExecStart=/usr/bin/fw16-led-matrixd
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

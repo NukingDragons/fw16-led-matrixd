@@ -1,0 +1,22 @@
+[package]
+name = "fw16-led-matrixd"
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+version.workspace = true
+
+[target."cfg(windows)".dependencies]
+windows-service = "0.7.0"
+
+[target."cfg(unix)".dependencies]
+nix = { version = "0.29.0", features = ["process", "fs", "signal", "resource"] }
+
+[dependencies]
+clap = { version = "4.5.1", features = ["derive", "cargo"] }
+log = "0.4.21"
+log4rs = "1.3.0"
+serde = "1.0.217"
+serial = "0.4.0"
+toml = "0.8.19"
+shared = { path = "../shared" }
+interprocess = "2.2.2"

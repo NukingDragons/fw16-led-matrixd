@@ -1,0 +1,9 @@
+[left_matrix]
+port = "COM3"
+baudrate = 115200
+sleeping = false
+
+[right_matrix]
+port = "COM4"
+baudrate = 115200
+sleeping = false
